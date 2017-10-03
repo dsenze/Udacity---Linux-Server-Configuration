@@ -50,7 +50,7 @@ You will take a baseline installation of a Linux server and prepare it to host y
 	sudo ufw allow ntp
 	sudo ufw enable
 	#!Important: open ports on Amazon VM. Otherwise its an deny from public internet. 
-
+![Image of firewall](https://github.com/dsenze/Udacity---Linux-Server-Configuration/blob/master/firewall.PNG)
 	
 	sudo vi /etc/ssh/sshd_config #(change port 22 to 2200) and save
 	sudo service ssh stop
