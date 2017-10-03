@@ -170,9 +170,21 @@ You will take a baseline installation of a Linux server and prepare it to host y
 
 ![Image of error](https://github.com/dsenze/Udacity---Linux-Server-Configuration/blob/master/facebook_error.png)
 
-#### Log into developer account and Server IP for valid oauth redirect URI
+#### Log into developer account. add Server IP for valid oauth redirect URI
 ![Image of error](https://github.com/dsenze/Udacity---Linux-Server-Configuration/blob/master/facebook_resolution.png)
 
 ## Resources used
 
+http://docs.sqlalchemy.org/en/latest/core/engines.html
 
+https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
+
+http://modwsgi.readthedocs.io/en/develop/user-guides/quick-configuration-guide.html
+
+https://stackoverflow.com/questions/44742566/wsgi-cant-find-file-in-same-directory-in-app
+
+https://askubuntu.com/questions/365087/grant-a-user-permissions-on-www-data-owned-var-www
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+https://www.udacity.com/course/configuring-linux-web-servers--ud299
