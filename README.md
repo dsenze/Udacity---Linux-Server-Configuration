@@ -33,10 +33,10 @@ You will take a baseline installation of a Linux server and prepare it to host y
 
 ## Howto
 
-#### 1-2 Get a  server.
+#### 1-2. Get a  server.
 	 # start VM in Amazon lightsail. https://lightsail.aws.amazon.com
 	 # Open ssh console
-#### 3-4 Get updates and lock down firewall and connect to VM with Putty.
+#### 3-4. Get updates and lock down firewall and connect to VM with Putty.
 	
 	# ** Install updates **
 	sudo apt-get update
@@ -60,7 +60,7 @@ You will take a baseline installation of a Linux server and prepare it to host y
 	# Open putty and add SSH key and connect to public IP on port 2200.
 	# Login with  user : ubuntu
 	
-#### 6-8 Create user, configure SSH Key and sudo permissions
+#### 6-8. Create user, configure SSH Key and sudo permissions
 	sudo adduser grader --disabled-password
 	sudo su grader
 	cd ~
@@ -83,12 +83,12 @@ You will take a baseline installation of a Linux server and prepare it to host y
 	sudo dpkg-reconfigure tzdata 
 	# select europé / stockholm.
 
-#### 10 Install and configure Apache to serve a Python mod_wsgi application
+#### 10. Install and configure Apache to serve a Python mod_wsgi application
 	$ sudo apt-get install apache2
 	$ sudo apt-get install libapache2-mod-wsgi
 	$ sudo a2enmod wsgi
 	$ sudo service apache2 restart
-#### 11 Install and configure PostgreSQL, add DB and User
+#### 11. Install and configure PostgreSQL, add DB and User
 	
 	sudo apt-get install postgresql
 	# Check pg_hba.conf file, only localhost allowed. No remote connections allowed.
@@ -101,7 +101,7 @@ You will take a baseline installation of a Linux server and prepare it to host y
 	    GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog;
 	    \q
 	
-#### 12 - 13 deploy from git, add content, set permissions, install dependencies
+#### 12 - 13. deploy from git, add content, set permissions, install dependencies
 	sudo apt-get install git
 	cd /var/www
 	sudo mkdir itemcatalog
@@ -130,7 +130,7 @@ You will take a baseline installation of a Linux server and prepare it to host y
     cd static
     sudo chown -R www-data:www-data images/*
 	
-#### 14 Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser. 
+#### 14. Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser. 
     sudo vi /etc/apache2/sites-available/item_catalog.conf
     
     <VirtualHost *:80>
