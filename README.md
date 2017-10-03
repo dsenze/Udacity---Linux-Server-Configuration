@@ -165,6 +165,14 @@ You will take a baseline installation of a Linux server and prepare it to host y
         application.secret_key = 'secretkey'
         sudo service apache2 restart
 
-#### Oauth Facebook URL Blocked
+### Oauth Facebook URL Blocked
+#### There where problems with Facebook login.
 
-## Resources
+![Image of error](https://github.com/dsenze/Udacity---Linux-Server-Configuration/blob/master/facebook_error.png)
+
+#### Log into developer account and Server IP for valid oauth redirect URI
+![Image of error](https://github.com/dsenze/Udacity---Linux-Server-Configuration/blob/master/facebook_resolution.png)
+
+## Resources used
+
+
