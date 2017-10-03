@@ -73,6 +73,11 @@ You will take a baseline installation of a Linux server and prepare it to host y
 	sudo vi .ssh/authorized_keys (paste ssh public generated key, used puttygen)
 	# Save!
 	sudo service ssh start
+	
+	# add grader to sudoers.d
+	sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader
+	sudo vi /etc/sudoers.d/grader
+	# change name on ubuntu to grader
 
 	# Disable root login
 	sudo vi /etc/ssh/sshd_config
