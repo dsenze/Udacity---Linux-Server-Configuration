@@ -2,8 +2,8 @@
 # Udacity---Linux-Server-Configuration
 
 You will take a baseline installation of a Linux server and prepare it to host your web applications. You will secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing web applications onto it.
-# live url: http://18.194.182.23
-# SSH: 18.194.182.23:2200
+# live url:http://18.194.180.252/
+# SSH: 18.194.180.252:2200
 
 ## Instructions
 #### Get your server ready
